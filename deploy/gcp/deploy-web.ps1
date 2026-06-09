@@ -20,15 +20,12 @@ if (-not $ApiUrl) {
   throw "API service URL not found. Deploy the API first."
 }
 
-$WebUrl = gcloud run services describe $Service `
-  --project $ProjectId `
-  --region $Region `
-  --format "value(status.url)" 2>$null
-
-$WebBaseEnv = ""
-if ($WebUrl) {
-  $WebBaseEnv = ",HERMENEUT_WEB_BASE_URL=$WebUrl"
+$ProjectNumber = gcloud projects describe $ProjectId --format "value(projectNumber)"
+if (-not $ProjectNumber) {
+  throw "Project number not found."
 }
+$WebUrl = "https://$Service-$ProjectNumber.$Region.run.app"
+$WebBaseEnv = ",HERMENEUT_WEB_BASE_URL=$WebUrl"
 
 Write-Host "Building web image: $Image"
 gcloud builds submit . `
