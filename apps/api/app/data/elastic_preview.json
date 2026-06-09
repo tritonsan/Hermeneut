@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "backend": "elastic_backup_preview",
+    "read_only": true,
+    "data_timestamp": "public-synthetic-preview",
+    "limitations": "Synthetic public preview fixture; live demo evidence is restored in Elastic."
+  },
+  "libraries": [
+    {
+      "library_id": "shamsiyya_hashiya_demo",
+      "name": "Shamsiyya Demo Library",
+      "description": "Synthetic public preview of a layered classical logic library.",
+      "passage_count": 3,
+      "source_count": 5,
+      "work_count": 6,
+      "author_count": 5,
+      "edge_count": 4,
+      "searchable_source_count": 5
+    }
+  ],
+  "authors": [
+    {
+      "author_id": "katibi",
+      "name": "Najm al-Din al-Katibi",
+      "name_ar": "نجم الدين الكاتبي",
+      "library_id": "shamsiyya_hashiya_demo"
+    },
+    {
+      "author_id": "qutb-razi",
+      "name": "Qutb al-Din al-Razi",
+      "name_ar": "قطب الدين الرازي",
+      "library_id": "shamsiyya_hashiya_demo"
+    },
+    {
+      "author_id": "sayyid-sharif",
+      "name": "Sayyid Sharif al-Jurjani",
+      "name_ar": "السيد الشريف الجرجاني",
+      "library_id": "shamsiyya_hashiya_demo"
+    },
+    {
+      "author_id": "siyalkuti",
+      "name": "Abd al-Hakim al-Siyalkuti",
+      "name_ar": "عبد الحكيم السيالكوتي",
+      "library_id": "shamsiyya_hashiya_demo"
+    },
+    {
+      "author_id": "issam",
+      "name": "Isam al-Din al-Isfarayini",
+      "name_ar": "عصام الدين الإسفراييني",
+      "library_id": "shamsiyya_hashiya_demo"
+    }
+  ],
+  "works": [
+    {
+      "work_id": "katibi-shamsiyya",
+      "title": "al-Risala al-Shamsiyya",
+      "title_ar": "الرسالة الشمسية",
+      "author_id": "katibi",
+      "author_name": "Najm al-Din al-Katibi",
+      "library_id": "shamsiyya_hashiya_demo",
+      "layer_type": "matn",
+      "source_count": 1,
+      "passage_count": 1,
+      "searchable_source_count": 1,
+      "relationship_count": 1
+    },
+    {
+      "work_id": "qutb-razi-tahrir-shamsiyya",
+      "title": "Tahrir al-Qawaid al-Mantiqiyya",
+      "title_ar": "تحرير القواعد المنطقية",
+      "author_id": "qutb-razi",
+      "author_name": "Qutb al-Din al-Razi",
+      "library_id": "shamsiyya_hashiya_demo",
+      "layer_type": "sharh",
+      "source_count": 1,
+      "passage_count": 1,
+      "searchable_source_count": 1,
+      "relationship_count": 2
+    },
+    {
+      "work_id": "sayyid-sharif-hashiya-shamsiyya",
+      "title": "Hashiya ala al-Shamsiyya",
+      "title_ar": "حاشية على الشمسية",
+      "author_id": "sayyid-sharif",
+      "author_name": "Sayyid Sharif al-Jurjani",
+      "library_id": "shamsiyya_hashiya_demo",
+      "layer_type": "hashiya",
+      "source_count": 1,
+      "passage_count": 0,
+      "searchable_source_count": 1,
+      "relationship_count": 1
+    },
+    {
+      "work_id": "siyalkuti-hashiya-shamsiyya",
+      "title": "Hashiya ala al-Shamsiyya",
+      "title_ar": "حاشية السيالكوتي على الشمسية",
+      "author_id": "siyalkuti",
+      "author_name": "Abd al-Hakim al-Siyalkuti",
+      "library_id": "shamsiyya_hashiya_demo",
+      "layer_type": "hashiya",
+      "source_count": 1,
+      "passage_count": 1,
+      "searchable_source_count": 1,
+      "relationship_count": 1
+    },
+    {
+      "work_id": "issam-hashiya-shamsiyya",
+      "title": "Hashiya ala al-Shamsiyya",
+      "title_ar": "حاشية عصام على الشمسية",
+      "author_id": "issam",
+      "author_name": "Isam al-Din al-Isfarayini",
+      "library_id": "shamsiyya_hashiya_demo",
+      "layer_type": "hashiya",
+      "source_count": 1,
+      "passage_count": 0,
+      "searchable_source_count": 1,
+      "relationship_count": 1
+    },
+    {
+      "work_id": "preview-unresolved-work",
+      "title": "Unresolved Preview Work",
+      "title_ar": "عمل تجريبي غير مربوط",
+      "author_id": "katibi",
+      "author_name": "Najm al-Din al-Katibi",
+      "library_id": "shamsiyya_hashiya_demo",
+      "layer_type": "independent",
+      "source_count": 0,
+      "passage_count": 0,
+      "searchable_source_count": 0,
+      "relationship_count": 0
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "shamsiyya-katibi-matn",
+      "work_id": "katibi-shamsiyya",
+      "title": "Synthetic Matn Preview",
+      "author_name": "Najm al-Din al-Katibi",
+      "library_id": "shamsiyya_hashiya_demo",
+      "provider": "Synthetic Preview",
+      "url": "local-preview://shamsiyya/matn",
+      "ingestion_status": "searchable",
+      "ocr_status": "synthetic_text",
+      "indexed_passage_count": 1,
+      "text_layer": "matn"
+    },
+    {
+      "source_id": "shamsiyya-qutb-razi-sharh",
+      "work_id": "qutb-razi-tahrir-shamsiyya",
+      "title": "Synthetic Sharh Preview",
+      "author_name": "Qutb al-Din al-Razi",
+      "library_id": "shamsiyya_hashiya_demo",
+      "provider": "Synthetic Preview",
+      "url": "local-preview://shamsiyya/sharh",
+      "ingestion_status": "searchable",
+      "ocr_status": "synthetic_text",
+      "indexed_passage_count": 1,
+      "text_layer": "sharh"
+    },
+    {
+      "source_id": "shamsiyya-sayyid-sharif-hashiya",
+      "work_id": "sayyid-sharif-hashiya-shamsiyya",
+      "title": "Synthetic Sayyid Hashiya Preview",
+      "author_name": "Sayyid Sharif al-Jurjani",
+      "library_id": "shamsiyya_hashiya_demo",
+      "provider": "Synthetic Preview",
+      "url": "local-preview://shamsiyya/sayyid",
+      "ingestion_status": "searchable",
+      "ocr_status": "synthetic_text",
+      "indexed_passage_count": 0,
+      "text_layer": "hashiya"
+    },
+    {
+      "source_id": "shamsiyya-siyalkuti-hashiya",
+      "work_id": "siyalkuti-hashiya-shamsiyya",
+      "title": "Synthetic Siyalkuti Hashiya Preview",
+      "author_name": "Abd al-Hakim al-Siyalkuti",
+      "library_id": "shamsiyya_hashiya_demo",
+      "provider": "Synthetic Preview",
+      "url": "local-preview://shamsiyya/siyalkuti",
+      "ingestion_status": "searchable",
+      "ocr_status": "synthetic_text",
+      "indexed_passage_count": 1,
+      "text_layer": "hashiya"
+    },
+    {
+      "source_id": "shamsiyya-issam-hashiya",
+      "work_id": "issam-hashiya-shamsiyya",
+      "title": "Synthetic Isam Hashiya Preview",
+      "author_name": "Isam al-Din al-Isfarayini",
+      "library_id": "shamsiyya_hashiya_demo",
+      "provider": "Synthetic Preview",
+      "url": "local-preview://shamsiyya/issam",
+      "ingestion_status": "searchable",
+      "ocr_status": "synthetic_text",
+      "indexed_passage_count": 0,
+      "text_layer": "hashiya"
+    }
+  ],
+  "passages": [
+    {
+      "passage_id": "preview-shamsiyya-001",
+      "source_id": "shamsiyya-katibi-matn",
+      "work_id": "katibi-shamsiyya",
+      "library_id": "shamsiyya_hashiya_demo",
+      "text_raw": "هذا مثال قصير من متن الشمسية للمعاينة العامة.",
+      "page_ref": "preview:1",
+      "source_page": 1,
+      "passage_order": 1
+    },
+    {
+      "passage_id": "preview-shamsiyya-002",
+      "source_id": "shamsiyya-qutb-razi-sharh",
+      "work_id": "qutb-razi-tahrir-shamsiyya",
+      "library_id": "shamsiyya_hashiya_demo",
+      "text_raw": "هذا مثال قصير من شرح الشمسية يوضح طبقة الشرح.",
+      "page_ref": "preview:2",
+      "source_page": 2,
+      "passage_order": 2
+    },
+    {
+      "passage_id": "preview-shamsiyya-003",
+      "source_id": "shamsiyya-siyalkuti-hashiya",
+      "work_id": "siyalkuti-hashiya-shamsiyya",
+      "library_id": "shamsiyya_hashiya_demo",
+      "text_raw": "هذا مثال قصير من حاشية السيالكوتي على الشمسية للمعاينة.",
+      "page_ref": "preview:3",
+      "source_page": 3,
+      "passage_order": 3
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "preview-edge-1",
+      "from_type": "work",
+      "from_id": "qutb-razi-tahrir-shamsiyya",
+      "to_type": "work",
+      "to_id": "katibi-shamsiyya",
+      "relation": "comments_on",
+      "library_id": "shamsiyya_hashiya_demo",
+      "confidence": 0.95,
+      "verification_status": "synthetic_preview"
+    },
+    {
+      "edge_id": "preview-edge-2",
+      "from_type": "work",
+      "from_id": "siyalkuti-hashiya-shamsiyya",
+      "to_type": "work",
+      "to_id": "qutb-razi-tahrir-shamsiyya",
+      "relation": "glosses",
+      "library_id": "shamsiyya_hashiya_demo",
+      "confidence": 0.9,
+      "verification_status": "synthetic_preview"
+    },
+    {
+      "edge_id": "preview-edge-3",
+      "from_type": "work",
+      "from_id": "sayyid-sharif-hashiya-shamsiyya",
+      "to_type": "work",
+      "to_id": "qutb-razi-tahrir-shamsiyya",
+      "relation": "glosses",
+      "library_id": "shamsiyya_hashiya_demo",
+      "confidence": 0.86,
+      "verification_status": "synthetic_preview"
+    },
+    {
+      "edge_id": "preview-edge-4",
+      "from_type": "work",
+      "from_id": "issam-hashiya-shamsiyya",
+      "to_type": "work",
+      "to_id": "qutb-razi-tahrir-shamsiyya",
+      "relation": "glosses",
+      "library_id": "shamsiyya_hashiya_demo",
+      "confidence": 0.84,
+      "verification_status": "synthetic_preview"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  background: #fbf7ec;
+  color: #2a2118;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(180deg, #f9faf7 0, #f3f0e8 340px, #fbf7ec 341px),
+    linear-gradient(90deg, rgba(89, 104, 92, 0.06), transparent 28%, transparent 72%, rgba(36, 33, 42, 0.04)),
+    #fbf7ec;
+  color: #2a2118;
+}
+
+pre,
+code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.arabic {
+  direction: rtl;
+  font-family: "Times New Roman", serif;
+  line-height: 2;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.safe-text {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.safe-link {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+}
+
+.scholarly-surface {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(247, 248, 243, 0.82)),
+    #ffffff;
+}
+
+.evidence-quote {
+  direction: rtl;
+  font-family: "Times New Roman", serif;
+  line-height: 2.05;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.subtle-grid {
+  background-image:
+    linear-gradient(rgba(89, 104, 92, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(89, 104, 92, 0.08) 1px, transparent 1px);
+  background-size: 26px 26px;
+}

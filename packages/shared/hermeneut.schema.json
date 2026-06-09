@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hermeneut.dev/schemas/agent-run.json",
+  "title": "Hermeneut Agent Run",
+  "type": "object",
+  "required": ["run_id", "detected_context", "hypotheses", "search_plan", "candidates", "evidence", "final_report"],
+  "properties": {
+    "run_id": {"type": "string"},
+    "detected_context": {"type": "object"},
+    "hypotheses": {"type": "array"},
+    "search_plan": {"type": "array"},
+    "candidates": {"type": "array"},
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "evidence_id": {"type": "string"},
+          "passage_id": {"type": "string"},
+          "work_id": {"type": "string"},
+          "retrieval_backend": {"type": "string"},
+          "elastic_index": {"type": ["string", "null"]},
+          "tool_trace": {"type": "object"}
+        }
+      }
+    },
+    "final_report": {"type": "string"}
+  }
+}
